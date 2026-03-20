@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday 🎉🌙</title>
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: #fff8e1;
+    color: #333;
+    padding: 50px;
+  }
+  h1 {
+    color: #ff6f61;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #ffca28;
+    border: none;
+    border-radius: 8px;
+  }
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px #ff6f61; }
+    100% { text-shadow: 0 0 20px #ff6f61; }
+  }
+</style>
+</head>
+<body>
+  <h1>Happy Birthday & Selamat Lebaran! 🎉🌙</h1>
+  <p>I hope you get everything you’ve been wishing for, and semoga selalu dikelilingi hal-hal dan orang-orang baik.</p>
+  <p>Di umur baru ini, semoga makin bahagia, makin dewasa, menemukan jati diri kamu, dan hari-harimu selalu sehangat momen Lebaran ini 🌙✨</p>
+  
+  <button onclick="showSurprise()">Click for a surprise 😏</button>
+
+  <p id="surprise" style="display:none; margin-top:20px; color:#ff4081; font-weight:bold;"></p>
+
+  <script>
+    function showSurprise() {
+      document.getElementById('surprise').style.display = 'block';
+      document.getElementById('surprise').innerText = "Pssst… someone here really cares about you 😌🎂";
+    }
+  </script>
+</body>
+</html>
